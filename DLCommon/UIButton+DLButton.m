@@ -26,6 +26,10 @@
 }
 
 
++ (instancetype)dl_buttonWithNormalBackgroundImageName:(NSString *)normalBackgroundImageName highlightedBackgroundImageImage:(NSString *)highlightedBackgroundImageImage{
+    return [self dl_buttonWithNormalBackgroundImageName:normalBackgroundImageName selectedBackgroundImageName:nil highlightedBackgroundImageImage:highlightedBackgroundImageImage focusedBackgroundImageName:nil disableBackgroundImageName:nil];
+}
+
 + (instancetype)dl_buttonWithNormalBackgroundImageName:(NSString *)normalBackgroundImageName selectedBackgroundImageName:(NSString *)selectedBackgroundImageName{
     return [self dl_buttonWithNormalBackgroundImageName:normalBackgroundImageName selectedBackgroundImageName:selectedBackgroundImageName highlightedBackgroundImageImage:nil focusedBackgroundImageName:nil disableBackgroundImageName:nil];
 }
@@ -46,7 +50,6 @@
     if (disableBackgroundImageName != nil) {
         [button setBackgroundImage:[UIImage imageNamed:disableBackgroundImageName] forState:UIControlStateDisabled];
     }
-    
     [button sizeToFit];
     
     return button;
