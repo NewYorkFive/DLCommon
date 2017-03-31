@@ -25,4 +25,31 @@
     return button;
 }
 
+
++ (instancetype)dl_buttonWithNormalBackgroundImageName:(NSString *)normalBackgroundImageName selectedBackgroundImageName:(NSString *)selectedBackgroundImageName{
+    return [self dl_buttonWithNormalBackgroundImageName:normalBackgroundImageName selectedBackgroundImageName:selectedBackgroundImageName highlightedBackgroundImageImage:nil focusedBackgroundImageName:nil disableBackgroundImageName:nil];
+}
+
++ (instancetype)dl_buttonWithNormalBackgroundImageName:(NSString *)normalBackgroundImageName selectedBackgroundImageName:(NSString *)selectedBackgroundImageName highlightedBackgroundImageImage:(NSString *)highlightedBackgroundImageImage focusedBackgroundImageName:(NSString *)focusedBackgroundImageName disableBackgroundImageName:(NSString *)disableBackgroundImageName{
+    UIButton *button = [[self alloc]init];
+    
+    [button setBackgroundImage:[UIImage imageNamed:normalBackgroundImageName] forState:UIControlStateNormal];
+    if (selectedBackgroundImageName != nil) {
+        [button setBackgroundImage:[UIImage imageNamed:selectedBackgroundImageName] forState:UIControlStateSelected];
+    }
+    if (highlightedBackgroundImageImage != nil) {
+        [button setBackgroundImage:[UIImage imageNamed:highlightedBackgroundImageImage] forState:UIControlStateHighlighted];
+    }
+    if (focusedBackgroundImageName != nil) {
+        [button setBackgroundImage:[UIImage imageNamed:focusedBackgroundImageName] forState:UIControlStateFocused];
+    }
+    if (disableBackgroundImageName != nil) {
+        [button setBackgroundImage:[UIImage imageNamed:disableBackgroundImageName] forState:UIControlStateDisabled];
+    }
+    
+    [button sizeToFit];
+    
+    return button;
+}
+
 @end

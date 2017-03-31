@@ -19,5 +19,8 @@
 /// @return UIButton
 + (instancetype)dl_textButton:(NSString *)title fontSize:(CGFloat)fontSize normalColor:(UIColor *)normalColor selectedColor:(UIColor *)selectedColor;
 
++ (instancetype)dl_buttonWithNormalBackgroundImageName:(NSString *)normalBackgroundImageName selectedBackgroundImageName:(NSString *)selectedBackgroundImageName;
+
++ (instancetype)dl_buttonWithNormalBackgroundImageName:(NSString *)normalBackgroundImageName selectedBackgroundImageName:(NSString *)selectedBackgroundImageName highlightedBackgroundImageImage:(NSString *)highlightedBackgroundImageImage focusedBackgroundImageName:(NSString *)focusedBackgroundImageName disableBackgroundImageName:(NSString *)disableBackgroundImageName;
 
 @end
