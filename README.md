@@ -1,2 +1,2 @@
 # DLCommon
-Personal categories for Objective-C
+Personal categories for Objective-C project
