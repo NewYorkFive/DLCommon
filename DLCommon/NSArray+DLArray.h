@@ -9,4 +9,5 @@
 
 @interface NSArray (DLArray)
 + (NSArray *)dl_plistToClassWithPlistName:(NSString *)plistName andClassName:(NSString *)className;
+- (NSArray *)dl_convertToModelWithClassName:(NSString *)className;
 @end
