@@ -1,15 +1,15 @@
 //
-//  NSAttributedString+DLAttributedString.m
+//  NSAttributedString+LLAttributedString.m
 //  test
 //
 //  Created by NowOrNever on 16/03/2017.
 //  Copyright © 2017 Focus. All rights reserved.
 //
 
-#import "NSAttributedString+DLAttributedString.h"
+#import "NSAttributedString+LLAttributedString.h"
 
-@implementation NSAttributedString (DLAttributedString)
-+ (instancetype)dl_imageTextWithImage:(UIImage *)image imageWH:(CGFloat)imageWH title:(NSString *)title fontSize:(CGFloat)fontSize titleColor:(UIColor *)titleColor spacing:(CGFloat)spacing {
+@implementation NSAttributedString (LLAttributedString)
++ (instancetype)ll_imageTextWithImage:(UIImage *)image imageWH:(CGFloat)imageWH title:(NSString *)title fontSize:(CGFloat)fontSize titleColor:(UIColor *)titleColor spacing:(CGFloat)spacing {
     
     // 文本字典
     NSDictionary *titleDict = @{NSFontAttributeName: [UIFont systemFontOfSize:fontSize],

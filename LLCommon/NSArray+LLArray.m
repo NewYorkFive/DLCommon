@@ -1,20 +1,20 @@
 //
-//  NSArray+DLArray.m
+//  NSArray+LLArray.m
 //
 //  Created by NowOrNever on 01/03/2017.
 //  Copyright © 2017 NowOrNever. All rights reserved.
 //
 
-#import "NSArray+DLArray.h"
-#import "NSObject+DLObject.h"
-@implementation NSArray (DLArray)
+#import "NSArray+LLArray.h"
+#import "NSObject+LLObject.h"
+@implementation NSArray (LLArray)
 
-+ (NSArray *)dl_plistToClassWithPlistName:(NSString *)plistName andClassName:(NSString *)className{
++ (NSArray *)ll_plistToClassWithPlistName:(NSString *)plistName andClassName:(NSString *)className{
     NSURL *plistUrl = [[NSBundle mainBundle]URLForResource:plistName withExtension:nil];
     NSArray *tempArray = [NSArray arrayWithContentsOfURL:plistUrl];
-    return [tempArray dl_convertToModelWithClassName:className];
+    return [tempArray ll_convertToModelWithClassName:className];
 }
-- (NSArray *)dl_convertToModelWithClassName:(NSString *)className{
+- (NSArray *)ll_convertToModelWithClassName:(NSString *)className{
     NSMutableArray *targetArray = [[NSMutableArray alloc]init];
     Class ModelClass = NSClassFromString(className);
     for (NSDictionary * dict in self) {

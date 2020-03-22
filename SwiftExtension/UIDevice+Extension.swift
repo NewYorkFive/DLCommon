@@ -3,7 +3,7 @@
 //  KMCamera
 //
 //  Created by NowOrNever on 11/03/2020.
-//  Copyright © 2020 DL. All rights reserved.
+//  Copyright © 2020 LL. All rights reserved.
 //
 
 import UIKit

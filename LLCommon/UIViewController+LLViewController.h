@@ -1,5 +1,5 @@
 //
-//  UIViewController+DLViewController.h
+//  UIViewController+LLViewController.h
 //
 //  Created by NowOrNever on 10/02/2017.
 //  Copyright © 2017 NowOrNever. All rights reserved.
@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIViewController (DLViewController)
+@interface UIViewController (LLViewController)
 
 /**
  * 在当前视图控制器中添加子控制器，将子控制器的视图添加到 view 中
@@ -15,7 +15,7 @@
  * @param childController 要添加的子控制器
  * @param view            要添加到的视图
  */
-- (void)dl_addChildController:(UIViewController *)childController intoView:(UIView *)view;
+- (void)ll_addChildController:(UIViewController *)childController intoView:(UIView *)view;
 
 
 @end

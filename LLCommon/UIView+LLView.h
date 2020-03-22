@@ -1,5 +1,5 @@
 //
-//  UIView+DLView.h
+//  UIView+LLView.h
 //  MosiacCamera
 //
 //  Created by NowOrNever on 17/07/2017.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (DLView)
+@interface UIView (LLView)
 @property (nonatomic, assign) CGFloat frameX;
 @property (nonatomic, assign) CGFloat frameY;
 @property (nonatomic, assign) CGFloat frameWidth;

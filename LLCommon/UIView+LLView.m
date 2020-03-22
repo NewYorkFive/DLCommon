@@ -1,14 +1,14 @@
 //
-//  UIView+DLView.m
+//  UIView+LLView.m
 //  MosiacCamera
 //
 //  Created by NowOrNever on 17/07/2017.
 //  Copyright © 2017 kimsungwhee.com. All rights reserved.
 //
 
-#import "UIView+DLView.h"
+#import "UIView+LLView.h"
 
-@implementation UIView (DLView)
+@implementation UIView (LLView)
 - (CGFloat)frameX {
     return self.frame.origin.x;
 }

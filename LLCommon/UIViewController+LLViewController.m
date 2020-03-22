@@ -1,15 +1,15 @@
 //
-//  UIViewController+DLViewController.m
+//  UIViewController+LLViewController.m
 //
 //  Created by NowOrNever on 10/02/2017.
 //  Copyright © 2017 NowOrNever. All rights reserved.
 //
 
-#import "UIViewController+DLViewController.h"
+#import "UIViewController+LLViewController.h"
 
-@implementation UIViewController (DLViewController)
+@implementation UIViewController (LLViewController)
 
-- (void)dl_addChildController:(UIViewController *)childController intoView:(UIView *)view  {
+- (void)ll_addChildController:(UIViewController *)childController intoView:(UIView *)view  {
     
     // 1> 添加子控制器 － 否则响应者链条会被打断，导致事件无法正常传递，而且错误非常难改！
     [self addChildViewController:childController];

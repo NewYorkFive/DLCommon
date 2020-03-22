@@ -1,14 +1,14 @@
 //
-//  NSDictionary+DLDictionary.m
+//  NSDictionary+LLDictionary.m
 //
 //  Created by NowOrNever on 01/03/2017.
 //  Copyright © 2017 NowOrNever. All rights reserved.
 //
 
-#import "NSDictionary+DLDictionary.h"
+#import "NSDictionary+LLDictionary.h"
 
-@implementation NSDictionary (DLDictionary)
-- (NSString *)dl_descriptionWithLocale:(nullable id)locale{
+@implementation NSDictionary (LLDictionary)
+- (NSString *)ll_descriptionWithLocale:(nullable id)locale{
     NSMutableString *mStr = [NSMutableString string];
     [mStr appendString:@"{\n"];
     __block int count = 1;
